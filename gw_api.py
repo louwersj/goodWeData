@@ -4,7 +4,7 @@ import time
 from datetime import datetime, timedelta
 import requests
 
-''' this work is based upon the groundwork done by Mark Ruys on his original GW_API '''
+''' this work is based upon the groundwork done by Mark Ruys on his original GW_API  '''
 __author__ = "Johan Louwers"
 __copyright__ = "Copyright 2019, Johan Louwers"
 __license__ = "MIT"

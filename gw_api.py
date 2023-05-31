@@ -23,7 +23,11 @@ class GoodWeApi:
         self.status = {-1: 'Offline', 1: 'Normal'}
 
     def getCurrentReadings(self):
-        ''' Download the most recent readings from the GoodWe API. '''
+        """
+        Download the most recent readings from the GoodWe API.
+        :return:
+        """
+
 
         payload = {
             'powerStationId': self.system_id
@@ -169,12 +173,12 @@ class GoodWeApi:
 
 
     def getRawPsPowerstationById(self):
-        '''
+        """
         getRawPsPowerstationById is used to obtain the raw data from the Goodwe API endpoint without any
         modification to the returned message for endpoint: /v1/PowerStation/GetPowerStationById
 
         Goodwe documentation states the use for this endpoint as : "Get detailed information about the plant"
-        '''
+        """
 
         apiPayload = {
             'powerStationId': self.system_id
@@ -188,12 +192,12 @@ class GoodWeApi:
 
 
     def getRawPsInvertersByPowerStationId(self):
-        '''
+        """
         getRawPsInvertersByPowerStationId is used to obtain the raw data from the Goodwe API endpoint without any
         modification to the returned message for endpoint: /v1/PowerStation/GetInvertersByPowerStationId
 
         Goodwe documentation states the use for this endpoint as : "Get plant equipment information"
-        '''
+        """
         apiPayload = {
             'powerStationId': self.system_id
         }
